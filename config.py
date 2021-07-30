@@ -1,6 +1,9 @@
 import os
 from dotenv import load_dotenv
 
+basedir = os.path.abspath(os.path.dirname(__file__))
+#load_dotenv(os.path.join(basedir, '.env'))
+
 secret = os.urandom(24)
 
 class Config(object):
