@@ -1,5 +1,13 @@
+'''
+Descricao :
+	Responsavel por criar uma instancia da aplicação
+Aluno :
+	Fabiano Amaral Alves
+Data :
+	31 / 07 / 2021
+'''
+
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 
 from .database.models import Product, database

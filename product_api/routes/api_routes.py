@@ -1,3 +1,11 @@
+'''
+Descricao :
+	Responsavel por definir as rotas e CRUD da api
+Aluno :
+	Fabiano Amaral Alves
+Data :
+	31 / 07 / 2021
+'''
 import json
 
 from flask import Blueprint, request
@@ -18,7 +26,7 @@ class ListProduct(Resource):
     
     def post(self):
         data = json.loads(request.data)
-        # Gambiarra para validar os campos
+        # Gambiarra para validar os atributos da requisição
         i = methods.verify_data(data)
 
         if i != 5:

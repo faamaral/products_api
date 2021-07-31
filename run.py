@@ -1,3 +1,11 @@
+'''
+Descricao :
+	Responsavel por executar a aplicação localmente
+Aluno :
+	Fabiano Amaral Alves
+Data :
+	31 / 07 / 2021
+'''
 import os
 
 from product_api import app

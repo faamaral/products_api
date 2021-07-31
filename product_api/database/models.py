@@ -1,3 +1,11 @@
+'''
+Descricao :
+	Responsavel por definir as tabelas do banco de dados
+Aluno :
+	Fabiano Amaral Alves
+Data :
+	31 / 07 / 2021
+'''
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import Float
 

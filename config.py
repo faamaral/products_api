@@ -1,3 +1,11 @@
+'''
+Descricao :
+	Responsavel pelas configurações globais da aplicação
+Aluno :
+	Fabiano Amaral Alves
+Data :
+	31 / 07 / 2021
+'''
 import os
 from dotenv import load_dotenv
 
