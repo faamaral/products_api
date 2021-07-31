@@ -11,7 +11,7 @@ class Product(database.Model):
     name = database.Column('name',database.String(50), nullable=False, index=True)
     description = database.Column('description',database.Text)
     manufacturer = database.Column('manufacturer',database.String(35), nullable=False)
-    price = database.Column('price',database.DECIMAL)
+    price = database.Column('price',Float)
     amount = database.Column('amount',database.Integer, nullable=False)
 
     def __init__(self, name, description, manufacturer, price, amount):
@@ -20,6 +20,16 @@ class Product(database.Model):
         self.manufacturer = manufacturer
         self.price = price
         self.amount = amount
+
+    def serialize(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'description': self.description,
+            'manufacturer': self.manufacturer,
+            'price': self.price,
+            'amount': self.amount
+        }
 
     def __repr__(self):
         return f'<Product -> {self.name}>'
